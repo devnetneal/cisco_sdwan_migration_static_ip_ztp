@@ -24,7 +24,7 @@ class Bootstrap(Device):
 
     def get_bootstrap_config(self, uuid):
 
-        # example URL - https://64.103.50.121/dataservice/system/device/bootstrap/device/C1113-8P-FCZ2634R0T6?configtype=cloudinit&inclDefRootCert=false&version=v1
+        # example URL - https://x.x.x.x/dataservice/system/device/bootstrap/device/C1113-8P-FCZ2634R0T6?configtype=cloudinit&inclDefRootCert=false&version=v1
 
         url = f"{self.base_url}system/device/bootstrap/device/{uuid}?configtype=cloudinit&inclDefRootCert=false&version=v1"
         response = HttpMethods(self.session, url).request('GET')
